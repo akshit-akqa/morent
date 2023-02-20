@@ -1,0 +1,43 @@
+.main{
+    width: 15em;
+    padding: 1em 1em 0 1em;
+    border-radius: .625em;
+    @media screen and (min-width: 767px) {
+        width: 19em;
+    }
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.wishList1{
+    color: #ED3F3F;
+    width: 1.5em;
+}
+.wishList2{
+    color: rgb(143, 141, 141);
+    width: 1.5em;
+}
+.Name{
+    font-weight: 600;
+    font-size: 1em;
+    // padding-right: 5.41259em;
+    // padding-right: 5.475em; //was originally 5.5em but was wrapping the row
+    @media screen and (min-width: 767px) {
+        //margin-right: 104px;
+        font-size: 1.25em;
+        font-weight: 700;
+        // padding-right: 6.279em;
+        // padding-right: 6.42em;//was originally 6.5em but was wrapping the row 
+    }
+}
+.Type{
+    padding-top: .25em;
+    font-weight: 500;
+    font-size: .75em;
+    color: #90A3BF;
+    @media screen and (min-width: 767px) {
+        font-size: .875em;
+        font-weight: 700;
+    }
+}

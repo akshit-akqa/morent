@@ -1,0 +1,50 @@
+$c: #3563e9;
+.heading {
+  color: $c;
+  font-size: 25px;
+  font-weight: 600;
+}
+.avatar {
+  border-radius: 50%;
+}
+.searchIcon {
+  position: absolute;
+  width: 20px;
+  height: 20;
+}
+
+.filterIcon{
+    width: 20px;
+    height: 20px;
+}
+$small: 300px;
+$medium: 600px;
+
+@media screen and (min-width: $small) and (max-width: $medium) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchBar {
+    position: relative;
+    width: 50%;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    padding-left: 35px;
+    border-radius: 10px;
+    
+  }
+  .searchIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 120px;
+    top: 15px;
+    z-index: 1;
+  }
+  .filterIcon{
+    width: 25px;
+    height: 20px;
+    margin: 8px;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+  }
+}

@@ -1,0 +1,101 @@
+$threeIcons: #90a3bf;
+$button: #3563e9;
+
+.card {
+  border-radius: 5%;
+  // max-width: 19rem;
+  width: 20rem;
+  margin: 20px;
+  background-color: white;
+  @media (max-width: 400px) {
+    width: 15rem;
+    height: 17.875rem;
+  }
+}
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+
+}
+.carTitle {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 0;
+  @media (max-width: 400px) {
+    font-size: 2px;
+  }
+}
+.wishList1 {
+  width: 40px;
+  height: 40px;
+  color: red;
+}
+.wishList2 {
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+.type {
+  color: #90a3bf;
+  padding-left: 10px;
+}
+.carImage {
+  width: 300px;
+  height: 200px;
+  // width: 12.75rem;
+  // height: 4rem;
+  padding: 0 2.25rem 0 2.25rem;
+  @media (max-width: 400px) {
+    width: 12.25rem;
+    height: 3.5rem;
+    padding: 0 1.875rem 0 1.875rem;
+  }
+}
+.imageDiv {
+  display: flex;
+}
+.threeIcons {
+  display: flex;
+  justify-content: center;
+}
+.greyIcon {
+  transform: rotate(-10deg);
+  padding-bottom: 5px;
+}
+.cardGreyText {
+  color: $threeIcons;
+  padding-top: 10px;
+}
+.price {
+  font-weight: 700;
+  font-size: 22px;
+}
+.perday {
+  color: #90a3bf;
+}
+.lowerCard {
+  display: flex;
+  justify-content: space-around;
+}
+.lowerCardLeft{
+    padding-top: 10px;
+}
+.RentNow {
+  color: white;
+  background-color: $button;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  padding-top: 3rem;
+  margin-top: 5px;
+  
+}
+.lowerCard{
+  display: flex;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}

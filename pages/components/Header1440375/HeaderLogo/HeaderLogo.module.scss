@@ -1,0 +1,14 @@
+.logo{
+    color: #3563E9;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+$desktop: 1440px;
+@media screen and (min-width: $desktop){
+    .logo{
+        font-size: 1.75rem;
+        line-height: 48px;
+    }
+}

@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+    @media screen and (min-width:767px) {
+        display: flex;
+        flex-direction: row;
+        margin: 2em;
+    }
+    
+}

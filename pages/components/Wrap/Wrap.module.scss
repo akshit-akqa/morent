@@ -1,0 +1,13 @@
+.wrap {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  @media screen and (min-width: 767px) {
+    // margin-top: 6.25em;
+    margin-left: 2.5em;
+    // width: 91vw;
+  }
+  @media screen and (min-width: 1500px) {
+    // width: 91vw;
+  }
+}

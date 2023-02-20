@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 1.5em 0 1.5em;
+  @media screen and (min-width: 767px) {
+    margin: 2.25em 4em 0 4em;
+  }
+}
+.popular {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875em;
+  line-height: 150%;
+  color: #90a3bf;
+  @media screen and (min-width: 767px) {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 125%;
+  }
+}
+.view {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875em;
+  color: #3563e9;
+  @media screen and (min-width: 767px) {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 125%;
+  }
+}

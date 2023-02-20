@@ -1,0 +1,23 @@
+.main{
+    @media screen and (min-width:767px) {
+        display: flex;   
+    }
+}
+.test1{
+    @media screen and (min-width:767px) {
+    display: flex;
+    }
+}
+.test2{
+    @media screen and (min-width:767px) {
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+    }
+}
+.test3{
+    @media screen and (min-width:767px) {
+    display: flex;
+    flex-direction: column;
+    }
+}

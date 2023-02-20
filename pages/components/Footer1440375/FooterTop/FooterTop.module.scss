@@ -1,0 +1,30 @@
+.top{
+    width: 13.5em;
+    height: 5.75em;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:767px) {
+        width: 13.5em;
+        height: 5.75em;
+        margin-top: 2em;     
+    }
+}
+.logo{
+    color: #3563E9;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 2.25em;
+    @media screen and (min-width:767px) {
+        font-size: 2em;      
+    }
+}
+.brandLine{
+    color: #90A3BF;
+    font-size: .75em;
+    font-weight: 500;
+    line-height: 1.5em;
+    @media screen and (min-width:767px) {
+        font-size: 1em;   
+        width: 18.25em;   
+    }
+}

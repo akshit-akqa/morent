@@ -1,0 +1,23 @@
+$iconSize: 1.7rem;
+$greyText: #90A3BF;
+$cornerPadding: 1.5rem;
+.CardGreyIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+    height: 1.8rem;
+    padding-left: $cornerPadding;
+    padding-right: $cornerPadding;
+}
+.greyIcon{
+    width: $iconSize;
+    height: $iconSize;
+    transform: rotate(-10deg);
+}
+.cardGreyText{
+    font-size: 0.856rem;
+    font-weight: 500;
+    color: #90A3BF;
+    padding-top: 0.2rem;
+    padding-left: 0.374rem;
+}

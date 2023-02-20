@@ -1,0 +1,42 @@
+.wrap{
+    display:flex;
+    overflow-x:scroll;
+    //flex-direction: column;
+    width: 100vw;
+    
+    // margin-top: 2em;
+    // margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding-left: 1.5em;
+    .bannerMain1:last-child {
+
+        &:last-child{
+            display: none;
+        }
+        
+    }
+    // .Banner1440375_bannerMain1__NDGlJ:last-child{
+    //     display: none;
+    // }
+    @media screen and (min-width:767px) {
+        display: flex;
+        flex-direction: row;
+        // margin: 0 4em;
+        margin-top: 2em;   
+        // margin-left: 63px;
+        padding-left: 4em;
+    }
+    // justify-content: space-between;
+}
+.wrap >  :nth-child(2){
+    background-color:  #3563E9;
+}
+.wrap > :nth-child(2) > :nth-child(2) > :nth-child(1){
+    background-color: #54A6FF;
+}
+// .wrap :nth-child(2){
+//     display: none;
+//     @media screen and (min-width:767px) {
+//         display: flex;
+//     }
+// }

@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1em 1em 1.5em 1em;
+  border-radius: .625em .625em 0 0;
+  @media screen and (min-width: 767px) {
+    padding: 1.5em 2em 1.5em 1.5em;
+  }
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 150%;
+  @media screen and (min-width: 767px) {
+    font-size: 1.25em;
+    line-height: 150%;
+  }
+}
+.action {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 125%;
+  color: #90a3bf;
+  @media screen and (min-width: 767px) {
+    font-size: 0.875em;
+    line-height: 150%;
+  }
+}
+.right {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 125%;
+  color: #90a3bf;
+  @media screen and (min-width: 767px) {
+    font-size: 0.875em;
+    line-height: 150%;
+    margin-top: 1.5em;
+  }
+}

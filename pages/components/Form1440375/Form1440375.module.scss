@@ -1,0 +1,281 @@
+.main {
+  padding: 0 1.5em;
+  background: #f6f7f9;
+}
+.billingInfo {
+  background: #f6f7f9;
+  width: 327px;
+  border-radius: 0.625em;
+  @media screen and (min-width: 767px) {
+    width: 852px;
+    margin-bottom: 2em;
+    border-radius: 0.625em;
+  }
+}
+.basicDetails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    padding-left: 1rem;
+  }
+}
+.paymentDetails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #fff;
+  margin: 1em 0;
+  border-radius: 0.625em;
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    padding-left: 1rem;
+    margin: 1.5em 0em 0 0;
+  }
+}
+
+.label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 150%;
+  padding-bottom: 0.75em;
+  @media screen and (min-width: 767px) {
+    font-size: 0.875em;
+    line-height: 150%;
+    padding-bottom: 1em;
+  }
+}
+.input {
+  width: 18.4375rem;
+  height: 3.5rem;
+  border: none;
+  background: #f6f7f9;
+  border-radius: 0.625em;
+  padding-left: 1.5em;
+  margin-bottom: 1.25rem;
+  @media screen and (min-width: 767px) {
+    width: 24.125rem;
+    padding-left: 2em;
+  }
+}
+.inputPayment {
+  width: 18.4375rem;
+  height: 3.5rem;
+  border: none;
+  background: #f6f7f9;
+  border-radius: 0.625em;
+  padding-left: 1.5em;
+  margin-bottom: 1.25rem;
+  @media screen and (min-width: 767px) {
+    width: 24.125rem;
+    padding-left: 2em;
+  }
+}
+.rentalInfo {
+  background-color: #fff;
+  width: 327px;
+  border-radius: 0.625em;
+  @media screen and (min-width: 767px) {
+    width: 852px;
+    border-radius: 0.625em;
+  }
+}
+.field0 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  @media screen and (min-width: 767px) {
+    margin: 0;
+  }
+}
+.field0 :nth-child(2) {
+  margin-right: 32px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  //   margin: 0 1em;
+}
+.dropdownWrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  width: 347px;
+  @media screen and (min-width: 767px) {
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.dropdownWrap :nth-child(1) {
+  @media screen and (min-width: 767px) {
+    margin-right: 28px;
+  }
+}
+.dropdown {
+  width: 18.4375rem;
+  height: 3.5rem;
+  border: none;
+  background: #f6f7f9;
+  border-radius: 0.625em;
+  padding-left: 1.5em;
+  margin-bottom: 1.25rem;
+  color: #90a3bf;
+  @media screen and (min-width: 767px) {
+    background-color: #f6f7f9;
+    width: 24.6rem;
+    padding-left: 2em;
+    // margin: 0;
+  }
+}
+.up {
+  display: flex;
+  margin: 0 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 125%;
+  @media screen and (min-width: 767px) {
+    margin: 0 1.5rem;
+  }
+}
+.text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 125%;
+  padding-left: 0.5em;
+  padding-bottom: 1.25rem;
+  @media screen and (min-width: 767px) {
+    padding-bottom: 1.5rem;
+  }
+}
+.paymentMethod {
+  margin-top: 2em;
+  border-radius: 0.625em;
+  background: #ffffff;
+  // margin: 23em 0;
+  padding-bottom: 1em;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.visa {
+  display: flex;
+  justify-content: space-between;
+  width: 295px;
+  @media screen and (min-width: 767px) {
+    width: 804px;
+  }
+}
+.gateways {
+  width: 295px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+  background: #f6f7f9;
+  border-radius: 0.625em;
+  margin: 0.5em 1em 1.25em 1em;
+  @media screen and (min-width: 767px) {
+    width: 797px;
+    padding: 1em 2em;
+    margin: 0 1.5em 1.5em 1.5em;
+  }
+}
+.payName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875em;
+  line-height: 150%;
+  @media screen and (min-width: 767px) {
+    font-size: 1em;
+  }
+}
+.select {
+  margin-right: 0.5em;
+  vertical-align: middle;
+  @media screen and (min-width: 767px) {
+    margin-right: 1.25em;
+  }
+}
+.confirmation {
+  margin-top: 2em;
+  background-color: white;
+  height: 476px;
+  @media screen and (min-width: 767px) {
+    height: 484px;
+  }
+}
+.mails {
+  display: flex;
+  padding: 0.625em 1em;
+  background: #f6f7f9;
+  margin: 0 1em 1.25em 1em;
+  border-radius: 0.625em;
+  @media screen and (min-width: 767px) {
+    padding: 1em 0 1em 2em;
+  }
+}
+.multi {
+  vertical-align: bottom;
+}
+.mailText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 160%;
+  padding-left: 1em;
+  @media screen and (min-width: 767px) {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 150%;
+    padding-left: 1.25em;
+  }
+}
+.underline {
+  text-decoration: underline;
+}
+.tc {
+  margin-bottom: 2.125em;
+  @media screen and (min-width: 767px) {
+    margin-bottom: 2em;
+  }
+}
+.button {
+  padding-left: 1em;
+}
+.securityDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 1em 1em 1em;
+  @media screen and (min-width: 767px) {
+    margin: 2em 0em 1.5em 2.5em;
+  }
+}
+.securityHeading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  @media screen and (min-width: 767px) {
+    font-weight: 600;
+  }
+}
+.securityText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: .75em;
+  line-height: 125%;
+  color: #90A3BF;
+  @media screen and (min-width: 767px) {
+    font-size: .875em;
+    line-height: 150%;
+  }
+}

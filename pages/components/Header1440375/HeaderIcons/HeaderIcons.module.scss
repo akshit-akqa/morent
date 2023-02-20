@@ -1,0 +1,20 @@
+$desktop:1440px;
+    @media screen and (min-width: $desktop){
+        .Icon{
+            display: flex;
+            justify-content: space-between;
+            min-width: 20%;
+        }
+        
+    }
+
+.IconHeader{
+    display: none;
+    $desktop:1440px;
+    @media screen and (min-width: $desktop){
+        display: inline-flex;
+    }
+}
+.avatar{
+    border-radius: 50%;
+}

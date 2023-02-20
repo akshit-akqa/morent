@@ -1,0 +1,53 @@
+.parent {
+  width: 360px;
+  height: 1802px;
+  display: none;
+  @media screen and (min-width:767px) {
+    display: block;
+    background-color: white;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+  height: 352px;
+  padding-top: 2em;
+  margin: 0em 9.5em 0 2em;
+}
+.form {
+  display: flex;
+}
+.heading {
+  color: #90a3bf;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+}
+.type {
+  color: #596780;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 1em;
+}
+.quantity {
+  color: #90a3bf;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+}
+.categories {
+  display: flex;
+  margin-top: 1.75em;
+}
+.input {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+  // border-radius: 4px;
+  color: pink;
+}

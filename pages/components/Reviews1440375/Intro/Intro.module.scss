@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4.0625em 0 0.5em;
+}
+.avatar {
+  border-radius: 50%;
+}
+.name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  @media screen and (min-width: 767px) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+.designation {
+  color: #90a3bf;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 125%;
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+.date {
+  color: #90a3bf;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 125%;
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

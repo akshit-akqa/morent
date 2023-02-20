@@ -1,0 +1,84 @@
+.car {
+  margin: 24px;
+  border-radius: 60px;
+}
+.mainSlide {
+  padding-top: 30px;
+  // margin-right: 40px;
+}
+.carousel .slider-wrapper {
+  width: 50%;
+}
+.carousel .thumb {
+  width: 80%;
+  height: 90px;
+}
+.carousel {
+  // text-align: center;
+}
+.banner {
+  width: 327px;
+  height: 232px;
+  //khefi4rvi ibip4rv ievpui4 jefb4brv
+  // margin: 0 .75em;
+  border-radius: 10px;
+  @media screen and (min-width: 767px) {
+    width: 492px;
+    height: 360px;
+    // margin: 0 2em;
+  }
+}
+//carousel styling
+.main {
+  text-align: center;
+  margin-top: 2em;
+}
+.flex_row {
+  justify-content: center;
+  display: flex;
+  padding-top: 1.5em;
+  padding-right: .5em;
+  margin: 0 1.5em;
+  @media screen and (min-width: 767px) {
+    // width: 492px;
+    // height: 360px;
+    // margin: 0 2em;
+  }
+}
+
+.thumbnail {
+  padding-left: 13px;
+  border-radius: .625em;
+  @media screen and (min-width: 767px) {
+    // width: 148px;
+    padding-right: 7px;;
+  }
+}
+.clicked{
+  border: 1.5px solid #3563E9;
+  border-radius: .625em;
+  padding: .25em;
+  width: 6em;
+  height: 4em;
+  @media screen and (min-width: 767px) {
+    width: 148px;
+    height: 124px;
+  }
+}
+.notclick{
+  border-radius: .625em;
+  @media screen and (min-width: 767px) {
+    width: 148px;
+    height: 124px;
+  }
+}
+.img {
+  width: 327px;
+  height: 232px;
+  border-radius: .625em;
+  @media screen and (min-width: 767px) {
+    width: 492px;
+    height: 360px;
+    // margin: 0 2em;
+  }
+}

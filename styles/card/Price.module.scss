@@ -1,0 +1,14 @@
+$greyText: #90A3BF;
+.PriceDiv{
+    padding: 0 0 0 1.5rem;
+    // padding: 1.5rem 0 0 1.5rem;
+}
+.price{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.perday{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $greyText;
+}
