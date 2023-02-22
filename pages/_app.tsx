@@ -46,7 +46,12 @@ import FormHeading from "./components/FormHeading/FormHeading";
 //   );
 // }
 
+type AppProps = {
+    Component:any;
+    pageProps:any;
+}
 
-export default function MyApp({ Component, pageProps }) {
+
+export default function MyApp({ Component, pageProps }:AppProps) {
   return <Component {...pageProps} />
 }
