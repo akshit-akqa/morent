@@ -19,7 +19,7 @@ function BannerWrapper() {
       accessToken: "Pm-bYszT35Il_kAgIm4jTJw495mEdgoc9SrO1i-6FlM"
     });
     // let items:Array
-    client.getEntries({content_type:'banner'}).then((response:object) =>  {
+    client.getEntries({content_type:'banner'}).then((response:any) =>  {
       setBannerTitleB(response.items[0].fields.title)
       setBannerDescriptionB(response.items[0].fields.description)
       setBannerTitleA(response.items[1].fields.title)
