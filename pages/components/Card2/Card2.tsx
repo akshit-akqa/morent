@@ -15,7 +15,7 @@ interface ICard1440375Props {
   transmission: string;
   space: string;
   price: string;
-  carImage: string;
+  carImage: any;
 }
 
 const Card2 = (props: ICard1440375Props) => {
