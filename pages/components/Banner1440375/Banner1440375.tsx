@@ -19,7 +19,7 @@ function Banner1440375({title,body,imageUrl, style}:BannerProps) {
       <div className={styles.bannerMain1}>
         <Text title={title} body={body}/>
         <Button />
-        <div className={styles.i}><Image src={imageUrl} className={styles.car} /></div>
+        <div className={styles.i}><Image src={imageUrl} className={styles.car} alt="banner" /></div>
         {/* <Img/> */}
       </div>
     
