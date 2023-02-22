@@ -5,15 +5,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import { useWindowWidth } from "@react-hook/window-size";
+type caraouselProps= {
+  index:any;
+}
 function Caraousel1440375() {
   const onlyWidth = useWindowWidth();
   const imgs=[
-    {id:0,value:"https://svgur.com/i/qKa.svg"},
+    {id:0,value:"https://exchangeindia.s3.ap-south-1.amazonaws.com/View.svg"},
     {id:1,value:"https://cdn.carbuzz.com/gallery-images/2021-nissan-gt-r-nismo-front-seats-carbuzz-604076-1600.jpg"},
     {id:2,value:"https://imageio.forbes.com/blogs-images/peterlyon/files/2018/07/Screenshot-2018-07-06-19.08.24.jpg?format=jpg&width=960"},
   ]
   const [wordData,setWordData]=useState(imgs[0])
-  const handleClick=(index)=>{ 
+  const handleClick=(index:number)=>{ 
     console.log(index)
     const wordSlider=imgs[index];
     setWordData(wordSlider)

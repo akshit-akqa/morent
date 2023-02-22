@@ -10,15 +10,20 @@ import paypal from "../../assets/Avatars/PayPal.svg";
 import bitcoin from "../../assets/Avatars/Bitcoin.svg";
 import multi from "../../assets/Avatars/multi.svg";
 import Button from "../Card1440375/Button/Button";
-import security from "../../assets/Avatars/ic-security-safety.svg"
-import GooglePayButton from '@google-pay/button-react'
+import security from "../../assets/Avatars/ic-security-safety.svg";
+import GooglePayButton from "@google-pay/button-react";
 const options = [
   { value: "option1", label: "Option 1" },
   { value: "option2", label: "Option 2" },
   { value: "option3", label: "Option 3" },
 ];
-
-const Dropdown = ({ options, field, form }) => {
+type dropownProps = {
+  options: any;
+  field: any;
+  form: any;
+  
+};
+const Dropdown = ({ options, field, form }:dropownProps) => {
   const { setFieldValue } = form;
   const { name } = field;
   return (
@@ -28,7 +33,7 @@ const Dropdown = ({ options, field, form }) => {
       onChange={(e) => setFieldValue(name, e.target.value)}
       className={styles.dropdown}
     >
-      {options.map((option) => (
+      {options.map((option: any) => (
         <option key={option.value} value={option.value}>
           {option.label}
         </option>
@@ -243,67 +248,79 @@ export default function Form1440375() {
                 step={4}
               />
               <div className={styles.mails}>
-                <Image src={multi} alt="multi" className={styles.multi}/>
-                <span className={styles.mailText}>I agree with sending an Marketing and newsletter emails. No spam, promissed!</span>
+                <Image src={multi} alt="multi" className={styles.multi} />
+                <span className={styles.mailText}>
+                  I agree with sending an Marketing and newsletter emails. No
+                  spam, promissed!
+                </span>
               </div>
               <div className={`${styles.mails} ${styles.tc}`}>
-                <Image src={multi} alt="multi" className={styles.multi}/>
-                <span className={styles.mailText}>I agree with our <span className={styles.underline}>terms and conditions</span> and <span className={styles.underline}>privacy policy</span>!</span>
+                <Image src={multi} alt="multi" className={styles.multi} />
+                <span className={styles.mailText}>
+                  I agree with our{" "}
+                  <span className={styles.underline}>terms and conditions</span>{" "}
+                  and <span className={styles.underline}>privacy policy</span>!
+                </span>
               </div>
-              <div className={styles.button}><Button/></div>
+              <div className={styles.button}>
+                <Button />
+              </div>
               <div className={styles.securityDiv}>
-                <Image src={security} alt="security"/>
-                <span className={styles.securityHeading}>All your data are safe</span>
-                <span className={styles.securityText}>We are using the most advanced security to provide you the best experience ever.</span>
+                <Image src={security} alt="security" />
+                <span className={styles.securityHeading}>
+                  All your data are safe
+                </span>
+                <span className={styles.securityText}>
+                  We are using the most advanced security to provide you the
+                  best experience ever.
+                </span>
               </div>
             </div>
             <GooglePayButton
-            environment="TEST"
-            paymentRequest={{
-              apiVersion: 2,
-              apiVersionMinor: 0,
-              allowedPaymentMethods: [
-                {
-                  type:'CARD',
-                  parameters: {
-                    allowedAuthMethods: ['PAN_ONLY','CRYPTOGRAM_3DS'],
-                    allowedCardNetworks: ['MASTERCARD', 'VISA']
-                  },
-                  tokenizationSpecification:{
-                    type: 'PAYMENT_GATEWAY',
-                    parameters:{
-                      gateway:'example',
-                      gatewayMerchantId: 'exampleGatewayMerchantId',
+              environment="TEST"
+              paymentRequest={{
+                apiVersion: 2,
+                apiVersionMinor: 0,
+                allowedPaymentMethods: [
+                  {
+                    type: "CARD",
+                    parameters: {
+                      allowedAuthMethods: ["PAN_ONLY", "CRYPTOGRAM_3DS"],
+                      allowedCardNetworks: ["MASTERCARD", "VISA"],
+                    },
+                    tokenizationSpecification: {
+                      type: "PAYMENT_GATEWAY",
+                      parameters: {
+                        gateway: "example",
+                        gatewayMerchantId: "exampleGatewayMerchantId",
+                      },
                     },
                   },
+                ],
+                merchantInfo: {
+                  merchantId: "BCR2DN4T6SL2DN3T",
+                  merchantName: "MORENT",
                 },
-              ],
-              merchantInfo:{
-                merchantId: 'BCR2DN4T6SL2DN3T',
-                merchantName: 'MORENT',
-              },
-              transactionInfo: {
-                totalPriceStatus: 'FINAL',
-                totalPriceLabel: 'Total',
-                totalPrice: '1',
-                currencyCode: 'USD',
-                countryCode: 'US',
-              },
-              shippingAddressRequired: true,
-              callbackIntents: ["PAYMENT_AUTHORIZATION"],
-            }}
-            onLoadPaymentData={paymentRequest => {
-              console.log('Success', paymentRequest)
-            }}
-            onPaymentAuthorized={paymentData => {
-              console.log('Payment Authorized Success',paymentData)
-              return {transactionState: 'SUCCESS'}
-            }}
-            existingPaymentMethodRequired='false'
-            buttonColor="black"
-            buttonType="pay"
+                transactionInfo: {
+                  totalPriceStatus: "FINAL",
+                  totalPriceLabel: "Total",
+                  totalPrice: "1",
+                  currencyCode: "USD",
+                  countryCode: "US",
+                },
+                shippingAddressRequired: true,
+                callbackIntents: ["PAYMENT_AUTHORIZATION"],
+              }}
+              onLoadPaymentData={(paymentRequest) => {
+                console.log("Success", paymentRequest);
+              }}
+              onPaymentAuthorized={(paymentData) => {
+                console.log("Payment Authorized Success", paymentData);
+                return { transactionState: "SUCCESS" };
+              }}
+              buttonColor="black"
+              buttonType="pay"
             />
-
           </Form>
         )}
       </Formik>

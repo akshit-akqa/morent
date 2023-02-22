@@ -17,7 +17,7 @@ function Banner1() {
         <RentButton />
       </div>
       <div className={styles.imageDiv}>
-      <Image src={car} className={styles.bannerImage1}/>
+      <Image src={car} className={styles.bannerImage1} alt="bi1"/>
       </div>
     </div>
   );
