@@ -4,8 +4,13 @@
     }
 }
 .test1{
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:767px) and (max-width:1600px){
     display: flex;
+    }
+    @media screen and (min-width: 1600px){
+        display: flex;
+        width: 79vw;
+        justify-content: space-between;
     }
 }
 .test2{

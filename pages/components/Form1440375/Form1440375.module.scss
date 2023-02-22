@@ -161,9 +161,13 @@
   background: #ffffff;
   // margin: 23em 0;
   padding-bottom: 1em;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 1600px){
     display: flex;
     flex-direction: column;
+    // width: 852px;
+  }
+  @media screen and (min-width: 1600px){
+    width: 61.4%;
   }
 }
 .visa {
@@ -208,8 +212,13 @@
   margin-top: 2em;
   background-color: white;
   height: 476px;
-  @media screen and (min-width: 767px) {
+  border-radius: .625em;
+  @media screen and (min-width: 767px) and (max-width: 1600px) {
     height: 484px;
+    
+  }
+  @media screen and (min-width: 1600px){
+    width: 61.4%;
   }
 }
 .mails {

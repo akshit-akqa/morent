@@ -7,7 +7,7 @@
     margin-top: 2em;
     height: 18em;
 
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:767px) and (max-width:1600px){
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -16,7 +16,16 @@
         //here
         height: 8.5em;
     }
-}
+    @media screen and (min-width:1600px){
+        display: flex;
+        flex-direction: row;
+        margin-top: 3em;
+        padding-left: 83px;
+        padding-right: 65px;
+        height: 8.5em;
+    }
+    }
+
 .switch{
     position: absolute;
     margin-top: 90px;

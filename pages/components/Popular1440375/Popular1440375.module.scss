@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-between;
   margin: 2em 1.5em 0 1.5em;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width:1600px) {
     margin: 2.25em 4em 0 4em;
+  }
+  @media screen and (min-width: 1600px){
+    width: 77vw;
+    margin-left: 4em;
   }
 }
 .popular {

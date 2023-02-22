@@ -3,10 +3,14 @@
   padding: 1em;
   margin: 2em 1.5em 0 1.5em;
   border-radius: 10px;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width:1600px) {
     padding: 1.5em;
     width: 1045px;
     margin-left: 32px;
+  }
+  @media screen and (min-width: 1600px){
+    width: 79vw;
+    margin-left: 40px;
   }
 }
 .top {

@@ -18,13 +18,18 @@
     // .Banner1440375_bannerMain1__NDGlJ:last-child{
     //     display: none;
     // }
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:767px) and (max-width:1600px) {
         display: flex;
         flex-direction: row;
         // margin: 0 4em;
-        margin-top: 2em;   
+        padding-top: 2em;   
         // margin-left: 63px;
         padding-left: 4em;
+    }
+    @media screen and (min-width:1601px){
+        justify-content: space-evenly;
+        padding-left: 64px;
+        padding-top: 4em;
     }
     // justify-content: space-between;
 }

@@ -6,11 +6,15 @@
   margin-top: 2em;
   border-radius: .625em;
   //   max-width: 327px;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width:1600px){
     padding: 1.5em;
     // height: 35.277777777777%;
     width: 492px;
     height: 508px;
+  }
+  @media screen and (min-width: 1600px){
+    padding: 2em;
+    width: 100%;
   }
 }
 .top {
@@ -80,7 +84,7 @@
   line-height: 200%;
   color: #90a3bf;
   width: 295px;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width:1600px) {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -88,13 +92,25 @@
     width: 456px;
     color: #596780;
   }
+  @media screen and (min-width: 1600px){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    width: 100%;
+    color: #596780;
+  }
 }
 .specsWrap {
   display: flex;
   flex-wrap: wrap;
   width: 295px;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 1600px) {
     width: 444px;
+  }
+  @media screen and (min-width: 1600px){
+    width: 100%;
+    justify-content: space-between;
   }
   :nth-child(1) {
     margin-right: 35px;
@@ -113,8 +129,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
-  @media screen and (min-width:767px) {
+  @media screen and (min-width:767px) and (max-width:1600px) {
     padding-top: 2em;    
+  }
+  @media screen and (min-width:1600px){
+    padding-top: 4em;
   }
 }
 .price {
