@@ -29,9 +29,11 @@ const Card2 = (props: ICard1440375Props) => {
     carImage
   } = props
 
-  if (carImage.fields === undefined) {
+  if (!carImage) {
     return <></>
   }
+
+  console.log('Card2 ====>', carImage)
 
   return (
     <div className={styles.card}>
