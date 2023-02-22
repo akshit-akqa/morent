@@ -28,11 +28,11 @@ const filter = () => {
         // console.log(cardata)
       return cardata;
     }
-    return cardata.filter((car) => car.type === selectedCategory);
+    return cardata.filter((car:any) => car.type === selectedCategory);
   }
     var filteredList = useMemo(getFilteredList, [selectedCategory, cardata]);
 //   var filteredList = getFilteredList();
-  function handleCategoryChange(event) {
+  function handleCategoryChange(event:any) {
     setSelectedCategory(event.target.value);
   }
 
@@ -55,7 +55,7 @@ const filter = () => {
         </div>
       </div>
       <div>
-        {filteredList.map((element, index) => (
+        {filteredList.map((element:any, index) => (
           <Card2 {...element} key={index} />
           
         ))}
