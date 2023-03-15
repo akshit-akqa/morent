@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { useWindowWidth } from "@react-hook/window-size";
-import HeaderWrapper from "./Header/HeaderWrapper/HeaderWrapper";
-import Header1440375 from "./components/Header1440375/Header1440375";
 import Footer1440375 from "./components/Footer1440375/Footer1440375";
 
 function status() {
@@ -25,7 +23,6 @@ function status() {
 //   console.log(cardData);
   return (
     <div>
-      {onlyWidth > 767 ? <HeaderWrapper /> : <Header1440375 />}
       Order placed successfully for {data.name}
       <div style={{ height: 500 }}>
         <table style={{ border: "1px solid" }}>
