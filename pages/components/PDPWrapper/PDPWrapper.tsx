@@ -5,7 +5,6 @@ import styles from "./PDPWrapper.module.scss";
 import Popular1440375 from "../Popular1440375/Popular1440375";
 import Recommend1440375 from "../Recommend1440375/Recommend1440375";
 import Reviews1440375 from "../Reviews1440375/Reviews1440375";
-import Wrap from "../Wrap/Wrap";
 import ProductWrap from "../ProductWrap/ProductWrap";
 import ProductWrapPdp from "../ProductWrapPdp/ProductWrapPdp";
 import CarDescription from "../CarDescription/CarDescription";
@@ -21,10 +20,8 @@ function PDPWrapper() {
       <div className={styles.test2}>
         <Reviews1440375 />
         <Popular1440375 />
-        {/* <Wrap /> */}
         <ProductWrapPdp/>
         <Recommend1440375 />
-        {/* <Wrap /> */}
         <ProductWrapPdp/>
       </div>
       </div>
