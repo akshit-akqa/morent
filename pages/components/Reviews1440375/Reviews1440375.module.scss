@@ -8,6 +8,10 @@
     width: 70.55vw;
     // margin-left: 32px;
   }
+  @media screen and (min-width:240px) and (max-width:767px) {
+    width: 87.2vw;
+    margin: 8.533vw 6.4vw 0 6.4vw;
+  }
 }
 .top {
   width: 136px;
