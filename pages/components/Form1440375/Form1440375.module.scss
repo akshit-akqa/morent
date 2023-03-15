@@ -47,6 +47,9 @@
 }
 .onemore {
   padding: 0 1.6666666vw;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding: 0 4.266vw;
+  }
 }
 .paymentDetails {
   display: flex;
@@ -56,6 +59,8 @@
   border-radius: 0.625em;
   @media screen and (min-width: 240px) and (max-width: 767px) {
     row-gap: 5.333vw;
+    align-items: center;
+    width: 78.66vw;
     padding-bottom: 4.26666vw;
   }
   @media screen and (min-width: 767px) {
@@ -116,7 +121,7 @@
   border-radius: 0.625em;
   @media screen and (min-width: 240px) and (max-width: 767px) {
     padding-left: 6.4vw;
-    // width: 78.66666vw;
+    width: 70.133vw;
   }
   @media screen and (min-width: 767px) {
     width: max(386px, 25.13888888888888888888888888888vw);
@@ -320,6 +325,10 @@
 .paypal {
   width: 6.9444444444vw;
   height: 1.666666vw;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 25.6vw;
+    height: 5.333vw;
+  }
 }
 .select {
   margin-right: 0.5em;
@@ -333,6 +342,10 @@
   background-color: white;
   height: max(476px,30vw);
   border-radius: 0.625em;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    margin: 8.533vw 6.4vw 0 6.4vw;
+    height: max(476px,30vw);
+  }
   @media screen and (min-width: 767px) and (max-width: 1600px) {
     // height: max(484px,33.61111vw);
     min-height: 33.6111vw;
@@ -346,6 +359,9 @@
   row-gap: max(24px, 1.66666vw);
   padding: 0 max(24px, 1.6666vw);
   height: max(9.4444vw, 136px);
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding: 4.266vw;
+  }
 }
 .mails {
   display: flex;
@@ -386,12 +402,21 @@
 }
 .button {
   padding: 0 0 2.2222vw 1.66666vw;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding-left: 4.266vw;
+    margin-top: 12vw;
+    margin-bottom: 8.533vw;
+  }
+
 }
 .securityDiv {
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 767px) {
     padding-left: 1.66666vw;
+  }
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding-left: 4.266vw;
   }
 }
 .security {
@@ -403,6 +428,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    margin: 3.2vw 0 1.0666vw 0;
+  }
   @media screen and (min-width: 767px) {
     padding-top: 1.11111vw;
     font-style: normal;
