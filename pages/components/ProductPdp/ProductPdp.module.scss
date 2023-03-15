@@ -1,0 +1,59 @@
+.product{
+    background: white;
+    // max-width: 21.11vw;
+    width: 21.11vw;
+    border-radius: 10px;
+    height: max(388px,24.944vw);
+    padding: 24px;
+    @media screen and (min-width:240px) and (max-width:767px) {
+        padding: 16px;
+        width: 64vw;
+        max-width: 400px;
+        height: 288px;
+    }
+    @media screen and (min-width:767px) and (max-width:1260px){
+        padding: 12px;
+    }
+}
+.product:first-child{
+    display: none;
+}
+//////////
+.gaadi{
+    max-width: 100%;
+    display: flex;
+    // margin-top: max(66px,4.58333333vh);
+    // margin-bottom: max(66px,4.58333333vh);
+    @media screen and (min-width:1850px) {
+        margin: 93.86px 0;
+    }
+    @media screen and (min-width:240px) and (max-width:767px) {
+        height: 26.66vw;
+        display: flex;
+        padding: 0 14px;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width:767px) and (max-width:1260px){
+        margin: 20px 0;
+    }
+    
+    margin: 66px 0;
+}
+.car{
+    width: 14.16vw;
+    min-width: 204px;
+    //////WAS CAUSING PROBLEM WHILE CONTENTFUL IMAGE URL FETCHING
+    height: max(4.72222vw,68px); 
+    ///////////********************//////////////////////////////
+    align-items: center;
+    margin: 0 auto;
+    @media screen and (min-width:240px) and (max-width:767px) {
+        width: max(180px,22vw);
+        max-width: 300px;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1023px) {
+        min-width:100%;
+    }
+}

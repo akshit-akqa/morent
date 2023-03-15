@@ -12,7 +12,7 @@ import Caraousel1440375 from "./components/Caraousel1440375/Caraousel1440375";
 import Description1440375 from "./components/Description1440375/Description1440375";
 import Reviews1440375 from "./components/Reviews1440375/Reviews1440375";
 import Sidebar1440375 from "./components/Sidebar1440375/Sidebar1440375";
-import PDPWrapper1 from "./components/PDPWrapper1/PDPWrapper1";
+import PDPWrapper1 from "./components/PDPWrapper/PDPWrapper";
 import PDPWrapper2 from "./components/PDPWrapper2/PDPWrapper2";
 import Payment1440375 from "./components/Payment1440375/Payment1440375";
 import FormHeading from "./components/FormHeading/FormHeading";

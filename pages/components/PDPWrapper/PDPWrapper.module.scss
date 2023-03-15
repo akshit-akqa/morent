@@ -1,0 +1,28 @@
+.main {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    // box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}
+.test1 {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    margin-left: 2.22vw;
+    column-gap: 2vw;
+  }
+}
+.test2 {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 2.22222vw;
+    // width: 1080px;
+  }
+}
+.test3 {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

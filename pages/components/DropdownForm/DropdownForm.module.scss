@@ -1,0 +1,39 @@
+.main {
+  width: 40.4166666666vw;
+  height: 9.1666666666vw;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: max(24px, 1.6666666vw) max(3.3333vw, 48px);
+  @media screen and (min-width:240px) and (max-width:767px) {
+    width: 100%;
+    //can change
+    height: 120px;
+    padding: max(16px,4.26666vw);  
+  }
+}
+.top {
+  font-style: normal;
+  font-weight: 600;
+  font-size: max(16px, 1.11111vw);
+  line-height: 150%;
+}
+.mark {
+  width: max(16px, 1.11111vw);
+  height: max(16px, 1.11111vw);
+  vertical-align: middle;
+  margin-right: max(8px, 0.555555vw);
+}
+.form{
+    padding-top: max(1.11111vw,16px);
+    display: flex;
+    //change here
+    column-gap: max(3.33333vw,48px);
+    @media screen and (min-width:240px) and (max-width:767px) {
+      padding-top: 24px;
+      justify-content: space-between;
+      column-gap: max(10.666666vw,40px);
+      height: max(11.73333333333vw,44px);
+    }
+}

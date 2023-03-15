@@ -1,0 +1,371 @@
+.main {
+    background: #f6f7f9;
+    // width: max(59.1666666666vw,852px);
+  }
+  //
+  .billingInfo {
+    background: #f6f7f9;
+    width: 87.2vw;
+    border-radius: 0.625em;
+    // margin-top: max(8.53333333vw,32px);
+    margin: max(8.53333333vw, 32px) max(6.4vw, 24px) 0 max(6.4vw, 24px);
+    padding-bottom: max(16px, 4.26666vw);
+    @media screen and (min-width: 767px) {
+      width: max(59.1666666666vw, 852px);
+      margin-bottom: 2em;
+      border-radius: 0.625em;
+    }
+  }
+  //
+  .basicDetails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: max(16px,4.266666vw);
+    margin-bottom: 32px;
+    row-gap: 5.33333333vw;
+    @media screen and (min-width: 767px) {
+      flex-direction: row;
+      justify-content: space-between;
+      row-gap: max(1.666666vw, 24px);
+      padding: max(24px, 1.666666vw);
+    }
+  }
+  .onemore {
+    padding: 0 1.6666666vw;
+  }
+  .paymentDetails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #f6f7f9;
+    border-radius: 0.625em;
+    @media screen and (min-width: 767px) {
+      width: 55.83333333vw;
+      flex-direction: row;
+      justify-content: space-between;
+      row-gap: max(1.666666vw, 24px);
+      padding: max(24px, 1.666666vw);
+    }
+  }
+  //
+  .label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 150%;
+    padding-bottom: 0.75em;
+    @media screen and (min-width: 767px) {
+      font-weight: 600;
+      font-size: max(16px, 1.11111vw);
+      letter-spacing: -0.02em;
+      line-height: 150%;
+      padding-bottom: 1em;
+    }
+  }
+  //
+  .input {
+    width: 78.66666vw;
+    height: 3.5rem;
+    border: none;
+    background: #f6f7f9;
+    border-radius: 0.625em;
+    padding-left: 1.5em;
+    // margin-bottom: 1.25rem;
+    @media screen and (min-width: 767px) {
+      width: max(386px, 26.805555555vw);
+      height: max(56px, 3.88888888vw);
+      padding-left: max(32px, 2.22222vw);
+    }
+  }
+  .input::placeholder {
+    font-weight: 500;
+    color: #90a3bf;
+    font-size: max(0.972vw, 14px);
+    line-height: 150%;
+  }
+  .inputPayment {
+    width: 18.4375rem;
+    height: 3.5rem;
+    border: none;
+    background: #ffffff;
+    border-radius: 0.625em;
+    @media screen and (min-width: 767px) {
+      width: max(386px, 25.13888888888888888888888888888vw);
+      height: max(56px, 3.88888888vw);
+      padding-left: max(32px, 2.22222vw);
+    }
+  }
+  .inputPayment::placeholder {
+    font-weight: 500;
+    color: #90a3bf;
+    font-size: max(0.972vw, 14px);
+    line-height: 150%;
+  }
+  .rentalInfo {
+    background-color: #fff;
+    width: 87.2vw;
+    border-radius: 0.625em;
+    margin: 0 6.4vw;
+    @media screen and (min-width: 767px) {
+      width: max(59.1666666666vw, 852px);
+      border-radius: 0.625em;
+    }
+  }
+  //
+  .field0 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+    @media screen and (min-width: 767px) {
+      margin: 0;
+    }
+  }
+  .field0 :nth-child(2) {
+    // margin-right: 32px;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 240px) and (max-width: 767px) {
+      padding-left: max(16px, 4.266666vw);
+    }
+    //   margin: 0 1em;
+  }
+  .dropdownWrap {
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+    @media screen and (min-width: 767px) {
+      padding: max(24px, 1.66666vw);
+      // column-gap: 14px;
+      width: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  .dropdownWrap :nth-child(1) {
+    @media screen and (min-width: 767px) {
+      margin-right: 28px;
+    }
+  }
+  .mark {
+    width: max(1.1111vw, 16px);
+    height: max(1.1111vw, 16px);
+  }
+  .dropdown {
+    width: 78.66666666vw;
+    height: 3.5rem;
+    border: none;
+    background: #f6f7f9;
+    border-radius: 0.625em;
+    padding-left: 1.5em;
+    margin-bottom: 1.25rem;
+    color: #90a3bf;
+    @media screen and (min-width: 767px) {
+      background-color: #f6f7f9;
+      width: max(26.8vw, 444px);
+      height: max(3.8888888vw, 56px);
+      padding-left: 2em;
+      font-weight: 500;
+      font-size: max(0.97222vw, 14px);
+      line-height: 150%;
+  
+      ////@at-root
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("../../assets/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position: 90.155% center;
+      // margin: 0;
+    }
+  }
+  .up {
+    display: flex;
+    margin: 0 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 125%;
+    @media screen and (min-width: 767px) {
+      margin: 0 1.5rem;
+    }
+  }
+  .text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 125%;
+    padding-left: 0.5em;
+    padding-bottom: 1.25rem;
+    @media screen and (min-width: 767px) {
+      font-weight: 600;
+      font-size: max(16px, 1.11111vw);
+      line-height: 20px;
+      padding-bottom: 1.5rem;
+    }
+  }
+  .paymentMethod {
+    border-radius: 0.625em;
+    background: #ffffff;
+    margin: 8.53333vw 6.4vw 0 6.4vw;
+    @media screen and (min-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      width: max(59.1666666666vw, 852px);
+      padding-bottom: 1.11111vw;
+    }
+  }
+  .visa {
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    padding-bottom: 4.266vw;
+    @media screen and (min-width: 767px) {
+      width: 100%;
+    }
+  }
+  .gatewayDiv {
+    row-gap: 1.66666vw;
+    padding-top: 1.666666vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .gateways {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+    background: #f6f7f9;
+    border-radius: 0.625em;
+    @media screen and (min-width: 767px) {
+      width: 100%;
+      height: 3.888vw;
+      align-items: center;
+      padding: 0 2.222vw;
+    }
+  }
+  .payName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875em;
+    line-height: 150%;
+    @media screen and (min-width: 767px) {
+      color: #1a202c;
+      font-weight: 600;
+      font-size: 1.11111vw;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+    }
+  }
+  .paypal {
+    width: 6.9444444444vw;
+    height: 1.666666vw;
+  }
+  .select {
+    margin-right: 0.5em;
+    vertical-align: middle;
+    @media screen and (min-width: 767px) {
+      margin-right: 1.38888vw;
+    }
+  }
+  .confirmation {
+    margin-top: 2em;
+    background-color: white;
+    height: 476px;
+    border-radius: 0.625em;
+    @media screen and (min-width: 767px) and (max-width: 1600px) {
+      // height: max(484px,33.61111vw);
+      min-height: 33.6111vw;
+      width: max(59.1666666666vw, 852px);
+    }
+  }
+  .mailDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: max(24px, 1.66666vw);
+    padding: 0 max(24px, 1.6666vw);
+    height: max(9.4444vw, 136px);
+  }
+  .mails {
+    display: flex;
+    padding: 0.625em 1em;
+    background: #f6f7f9;
+    border-radius: 0.625em;
+    @media screen and (min-width: 767px) {
+      align-items: center;
+      width: 55.8333vw;
+      height: 3.88888vw;
+    }
+  }
+  .multi {
+    vertical-align: bottom;
+  }
+  .mailText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 160%;
+    padding-left: 1em;
+    @media screen and (min-width: 767px) {
+      font-style: normal;
+      font-weight: 600;
+      font-size: max(16px, 1.1111vw);
+      line-height: 150%;
+      padding-left: 1.25em;
+    }
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .tc {
+    margin-bottom: 2.125em;
+    @media screen and (min-width: 767px) {
+      margin-bottom: 2em;
+    }
+  }
+  .button {
+    padding: 0 0 2.2222vw 1.66666vw;
+  }
+  .securityDiv {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 767px) {
+      padding-left: 1.66666vw;
+    }
+  }
+  .security {
+    width: max(2.2222vw, 32px);
+    height: max(2.2222vw, 32px);
+  }
+  .securityHeading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    @media screen and (min-width: 767px) {
+      padding-top: 1.11111vw;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.1111vw;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+    }
+  }
+  .securityText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 125%;
+    color: #90a3bf;
+    @media screen and (min-width: 767px) {
+      font-weight: 500;
+      font-size: 0.972vw;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+    }
+  }
+  

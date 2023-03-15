@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: max(40px, 2.77777777777777777vw) max(32px,4.166666666vw) max(40px, 2.77777777777777777vw) max(60px,2.22vw);
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  width: 48.8888vw;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    width: 16.388888888vw;
+}
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #3563e9;
+  font-size: max(32px, 2.22222222vw);
+}
+.searchDiv {
+  position: relative;
+  background: white;
+  width: 34.1666666666666666666666vw;
+  height: max(44px,3.05555555555555555555555555555vw);
+}
+.searchbar {
+  padding-left: max(64px, 4.4444vw);
+  width: 34.1666666666666666666666vw;
+  height: max(44px,3.05555555555555555555555555555vw);
+  border: none;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 70px;
+  font-weight: 500;
+  font-size: max(14px, 0.972222222222222222222vw);
+  line-height: 150%;
+}
+.searchbar::placeholder{
+    color: #596780;
+}
+.search {
+  position: absolute;
+  width: max(24px, 1.66vw);
+  height: max(24px, 1.66vw);
+  margin: min(10px,0.694444444vw) 0 0 min(20px,1.38888888vw);
+  @media screen and (min-width:240px) and (max-width:1400px) {
+    width: 24px;
+    height: 24px; 
+   }
+}
+.filterDiv{
+  display: inline-block;
+  position: absolute;
+  right: 48px;
+  top: 1px;
+}
+.filter {
+  position: absolute;
+  width: max(24px, 1.66vw);
+  height: max(24px, 1.66vw);
+  margin-top: min(10px,0.694444444vw);
+  ////////UNABLE TO HANDLE MARGIN FILTER ICON
+  margin-right: 20px;
+  @media screen and (min-width:240px) and (max-width:1400px) {
+   width: 24px;
+   height: 24px; 
+  }
+}
+.IconHeader{
+    width: max(44px,3.05555555555555555555555555555vw);
+    height: max(44px,3.05555555555555555555555555555vw);
+}

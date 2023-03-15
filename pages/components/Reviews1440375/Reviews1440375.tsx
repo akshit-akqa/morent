@@ -22,10 +22,19 @@ function Reviews1440375() {
             designation="CEO at Bukalapak"
             date="21 July 2022"
           />
-          <div className={styles.review}>
-            We are very happy with the service from the MORENT App. Morent has a
-            low price . . .
-          </div>
+          {onlyWidth > 767 ? (
+            <div className={styles.review}>
+              We are very happy with the service from the MORENT App. Morent has
+              a low price and also a large variety of cars with good and
+              comfortable facilities. In addition, the service provided by the
+              officers is also very friendly and very polite.
+            </div>
+          ) : (
+            <div className={styles.review}>
+              We are very happy with the service from the MORENT App. Morent has
+              a low price . . .
+            </div>
+          )}
         </div>
         <div>
           <Intro
@@ -34,10 +43,19 @@ function Reviews1440375() {
             designation="CEO at Amazon"
             date="20 July 2022"
           />
-          <div className={styles.review}>
-            We are greatly helped by the services of the MORENT Application.
-            Morent has a low . . .
-          </div>
+          {onlyWidth > 767 ? (
+            <div className={styles.review}>
+              We are greatly helped by the services of the MORENT Application.
+              Morent has low prices and also a wide variety of cars with good
+              and comfortable facilities. In addition, the service provided by
+              the officers is also very friendly and very polite.
+            </div>
+          ) : (
+            <div className={styles.review}>
+              We are greatly helped by the services of the MORENT Application.
+              Morent has a low . . .
+            </div>
+          )}
         </div>
       </div>
       <div></div>

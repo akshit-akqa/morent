@@ -31,14 +31,14 @@
 //carousel styling
 .main {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 2.222vw;
 }
 .flex_row {
   justify-content: center;
   display: flex;
   padding-top: 1.5em;
   padding-right: .5em;
-  margin: 0 1.5em;
+  // margin: 0 1.5em;
   @media screen and (min-width: 767px) {
     // width: 492px;
     // height: 360px;
@@ -58,27 +58,27 @@
   border: 1.5px solid #3563E9;
   border-radius: .625em;
   padding: .25em;
-  width: 6em;
-  height: 4em;
+  width: 25.6vw;
+  height: 17.066vw;
   @media screen and (min-width: 767px) {
-    width: 148px;
-    height: 124px;
+    width: 10.2777vw;
+    height: 8.611vw;
   }
 }
 .notclick{
   border-radius: .625em;
   @media screen and (min-width: 767px) {
-    width: 148px;
-    height: 124px;
+    width: 10.2777vw;
+    height: 8.611vw;
   }
 }
 .img {
-  width: 327px;
-  height: 232px;
+  width: 87.2vw;
+  // height: 61vw;
   border-radius: .625em;
   @media screen and (min-width: 767px) {
-    width: 492px;
-    height: 360px;
+    width: 33.1666vw;
+    height: 25vw;
     // margin: 0 2em;
   }
 }

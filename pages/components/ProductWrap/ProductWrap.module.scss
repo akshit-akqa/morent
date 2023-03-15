@@ -1,0 +1,11 @@
+.plp {
+  display: flex;
+  // justify-content: flex-start;
+  width: 100%;
+  column-gap: 2.22vw;
+  padding: 0 4.44444vw;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    overflow-x: scroll;
+    column-gap: 19px;
+  }
+}

@@ -1,0 +1,92 @@
+.main {
+  background: #54a6ff;
+  color: #ffffff;
+  width: 44.44vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 24px;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 100%;
+    padding-top: max(16px, 4.2666666vw);
+    padding-left: max(15px, 4vw);
+    padding-bottom: max(4px,1.066666vw);
+    height: 61.86vw;
+  }
+}
+.main:nth-child(2) {
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    display: none;
+  }
+}
+.title {
+  font-weight: 600;
+  font-size: max(32px, 2.22vw);
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  width: 44.375%;
+  /////@at-root
+  padding-bottom: 16px;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding-bottom: max(3.2vw, 12px);
+    font-style: normal;
+    font-weight: 600;
+    font-size: max(16px, 4.2666666vw);
+    line-height: 150%;
+    width: 100%;
+    letter-spacing: -0.02em;
+  }
+}
+.description {
+  font-weight: 500;
+  font-size: max(16px, 1.11vw);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  width: 44%;
+  padding-bottom: 20px;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 57.6vw;
+    font-style: normal;
+    font-weight: 500;
+    font-size: max(12px, 3.2vw);
+    line-height: 160%;
+    padding-bottom: 0;
+    margin-bottom: max(12px,3.2vw);
+  }
+}
+.button {
+  border: none;
+  width: 8.0555555555vw;
+  height: 3.055555555vw;
+  color: #ffffff;
+  background: #3563e9;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: max(16px, 1.111111111vw);
+  font-family: 'Plus Jakarta Sans';
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    font-weight: 600;
+    width: 34.13333333vw;
+    height: 11.7333vw;
+    font-size: max(12px, 3.2vw);
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    padding: max(14px,3.73333vw) 0;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1260px) {
+    font-size: 15.2px;
+  }
+}
+.car {
+  margin: 0 auto;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 52.26vw;
+    margin-top: max(26px,6.9333333vw);
+    height: 14.93vw;
+  }
+}

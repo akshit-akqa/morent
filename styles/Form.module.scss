@@ -4,7 +4,8 @@
     @media screen and (min-width:767px) {
         display: flex;
         flex-direction: row;
-        margin: 2em;
+        justify-content: space-between;
+        padding: max(32px,2.2222vw) max(24px,1.666666vw);
     }
     
 }

@@ -3,8 +3,9 @@
   justify-content: space-between;
   background-color: white;
   padding: 1em 1em 1.5em 1em;
-  border-radius: .625em .625em 0 0;
+  border-radius: 0.625em 0.625em 0 0;
   @media screen and (min-width: 767px) {
+    width: max(59.1666666666vw,852px);
     padding: 1.5em 2em 1.5em 1.5em;
   }
 }
@@ -18,7 +19,8 @@
   font-size: 1em;
   line-height: 150%;
   @media screen and (min-width: 767px) {
-    font-size: 1.25em;
+    font-weight: 700;
+    font-size: max(20px, 1.388888vw);
     line-height: 150%;
   }
 }
@@ -29,8 +31,10 @@
   line-height: 125%;
   color: #90a3bf;
   @media screen and (min-width: 767px) {
-    font-size: 0.875em;
+    font-weight: 500;
+    font-size: max(14px, 0.9722222vw);
     line-height: 150%;
+    letter-spacing: -0.02em;
   }
 }
 .right {
@@ -40,8 +44,10 @@
   line-height: 125%;
   color: #90a3bf;
   @media screen and (min-width: 767px) {
-    font-size: 0.875em;
+    font-weight: 500;
+    font-size: max(14px, 0.9722222vw);
     line-height: 150%;
+    letter-spacing: -0.02em;
     margin-top: 1.5em;
   }
 }

@@ -1,0 +1,175 @@
+.main {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: max(24px, 1.6666666vw);
+  width: max(34.1666666666666vw, 492px);
+  height: max(560px, 39.3vw);
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 87.2vw;
+    height: 120vw;
+    // margin-top: max(8.53333333vw,32px);
+    margin: max(8.53333333vw,32px) max(6.4vw,24px) 0 max(6.4vw,24px);
+    padding: max(4.26666666vw, 16px);
+  }
+}
+.top {
+  width: max(444px, 30.833333vw);
+  font-style: normal;
+  font-weight: 700;
+  font-size: max(20px, 1.3888888vw);
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 78.666666666vw;
+    font-size: max(4.26666666vw, 16px);
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+.body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: max(0.972vw, 14px);
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    line-height: 160%;
+  }
+}
+.mid {
+  display: flex;
+  padding-top: max(32px, 2.22222vw);
+  column-gap: max(1.1111111vw, 16px);
+  padding-bottom: max(2.222222vw, 32px);
+  border-bottom: max(0.069444444vw, 1px) solid rgba(195, 212, 233, 0.4);
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding: max(24px, 6.4vw) 0;
+  }
+}
+.look {
+  width: max(132px, 9.1666666vw);
+  height: max(108px, 7.5vw);
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 30.9333vw;
+    height: 21.33333vw;
+  }
+}
+.info {
+  color: #1a202c;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    font-weight: 700;
+font-size: max(20px,5.33333vw);
+line-height: 140%;
+  }
+  
+}
+.review {
+  display: flex;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.reviewText {
+  letter-spacing: -0.02em;
+  color: #596780;
+  font-style: normal;
+  font-weight: 500;
+  font-size: max(0.972222vw, 14px);
+  padding-left: max(8px, 0.55555555vw);
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding: 0;
+    font-weight: 500;
+    font-size: 3.2vw;
+    line-height: 125%;
+  }
+}
+.Total {
+  display: flex;
+  flex-direction: column;
+  row-gap: max(1.66666vw, 24px);
+  padding: max(32px, 2.222222vw) 0;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    row-gap: max(3.2vw, 12px);
+    padding: max(16px, 4.266666vw) 0 max(24px, 6.4vw) 0;
+  }
+}
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.grey {
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+  font-weight: 500;
+  font-size: max(1.1111111vw, 16px);
+  line-height: 150%;
+}
+.black {
+  letter-spacing: -0.02em;
+  color: #1a202c;
+  font-weight: 500;
+  font-size: max(1.1111111vw, 16px);
+  line-height: 150%;
+}
+.input {
+  border: none;
+  background: #f6f7f9;
+  border-radius: 10px;
+  width: max(30.8333333333vw, 444px);
+  height: max(3.8888888vw, 56px);
+  font-weight: 500;
+  font-size: max(0.97222222vw, 14px);
+  line-height: 150%;
+  padding-left: max(32px, 2.222222vw);
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.input::placeholder {
+  color: #90a3bf;
+}
+.bottom {
+  display: flex;
+  padding-top: max(32px, 2.222222vw);
+  justify-content: space-between;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding-top: max(24px, 6.4vw);
+  }
+}
+.left {
+  font-weight: 700;
+  font-size: max(20px, 1.3888888vw);
+  line-height: 150%;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    font-size: max(16px, 4.266666vw);
+  }
+}
+.overall {
+  font-weight: 500;
+  font-size: max(14px, 0.9722222vw);
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    font-weight: 400;
+    font-size: max(12px, 3.2vw);
+    line-height: 15px;
+  }
+}
+.right {
+  font-weight: 700;
+  font-size: max(2.2222222vw, 32px);
+  line-height: 125%;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    font-weight: 700;
+    font-size: max(20px, 5.333333333vw);
+    line-height: 150%;
+  }
+}

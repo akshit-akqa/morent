@@ -2,12 +2,16 @@
   display: flex;
   justify-content: space-between;
   margin: 2em 1.5em 0 1.5em;
+  padding: 0 max(1.3888888vw,20px);
+  @media screen and (min-width: 240px) and (max-width:767px) {
+    padding: 0;
+  }
   @media screen and (min-width: 767px) and (max-width:1600px) {
     margin: 2.25em 4em 0 4em;
   }
   @media screen and (min-width: 1600px){
-    width: 77vw;
-    margin-left: 4em;
+    margin: 0 4.44%;
+    width: 91.11%;
   }
 }
 .popular {
@@ -17,7 +21,7 @@
   line-height: 150%;
   color: #90a3bf;
   @media screen and (min-width: 767px) {
-    font-size: 1em;
+    font-size: max(1em,1.11vw);
     font-weight: 600;
     line-height: 125%;
   }
@@ -26,9 +30,10 @@
   font-style: normal;
   font-weight: 600;
   font-size: 0.875em;
+  line-height: 150%;
   color: #3563e9;
   @media screen and (min-width: 767px) {
-    font-size: 1em;
+    font-size: max(1em,1.11vw);
     font-weight: 600;
     line-height: 125%;
   }

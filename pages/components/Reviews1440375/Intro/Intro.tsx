@@ -22,7 +22,7 @@ function Intro({ avatar, name, designation, date }: review) {
         <Avatar
           src={avatar}
           className={styles.avatar}
-          size={onlyWidth > 767 ? "56px" : "44px"}
+          size={onlyWidth > 767 ? "3.8vw" : "44px"}
         />
         <div className={styles.intro}>
         <span className={styles.name}>{name}</span>

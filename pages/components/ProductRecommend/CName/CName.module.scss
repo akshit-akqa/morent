@@ -1,0 +1,26 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.name{
+    color: #1A202C;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    font-size: clamp(16px, 24px, 1.388vw);
+    @media screen and (min-width:240px) and (max-width:767px) {
+        font-weight: 600;
+    }
+}
+.type{
+    color: #90A3BF;
+    font-weight: 700;
+    line-height: 150%;
+    font-size: max(14px,0.972vw);
+    
+    letter-spacing: -0.02em;
+    @media screen and (min-width:240px) and (max-width:767px) {
+        font-weight: 500;
+    }
+}

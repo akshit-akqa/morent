@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState, useEffect, useMemo } from "react";
 import Card from "./Card";
 import Card1440375 from "./components/Card1440375/Card1440375";
@@ -25,42 +26,46 @@ const filter = () => {
   function getFilteredList() {
     // Avoid filter when selectedCategory is null
     if (!selectedCategory) {
-        // console.log(cardata)
+      // console.log(cardata)
       return cardata;
     }
-    return cardata.filter((car:any) => car.type === selectedCategory);
+    return cardata.filter((car: any) => car.type === selectedCategory);
   }
-    var filteredList = useMemo(getFilteredList, [selectedCategory, cardata]);
-//   var filteredList = getFilteredList();
-  function handleCategoryChange(event:any) {
+  var filteredList = useMemo(getFilteredList, [selectedCategory, cardata]);
+  //   var filteredList = getFilteredList();
+  function handleCategoryChange(event: any) {
     setSelectedCategory(event.target.value);
   }
 
   return (
-    <div>
-      <div className="filter-container">
-        <div>Filter by Category:</div>
+    <>
+      <Head>
+        <title>Filter Page</title>
+      </Head>
+      <div>
+        <div className="filter-container">
+          <div>Filter by Category:</div>
+          <div>
+            <select
+              name="category-list"
+              id="category-list"
+              onChange={handleCategoryChange}
+            >
+              <option value="">All</option>
+              <option value="Hatchback">Hatchback</option>
+              <option value="Sport">Sport</option>
+              <option value="SUV">SUV</option>
+              <option value="SUV">Sedan</option>
+            </select>
+          </div>
+        </div>
         <div>
-          <select
-            name="category-list"
-            id="category-list"
-            onChange={handleCategoryChange}
-          >
-            <option value="">All</option>
-            <option value="Hatchback">Hatchback</option>
-            <option value="Sport">Sport</option>
-            <option value="SUV">SUV</option>
-            <option value="SUV">Sedan</option>
-          </select>
+          {filteredList.map((element: any, index) => (
+            <Card2 {...element} key={index} />
+          ))}
         </div>
       </div>
-      <div>
-        {filteredList.map((element:any, index) => (
-          <Card2 {...element} key={index} />
-          
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 

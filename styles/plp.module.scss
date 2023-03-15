@@ -1,0 +1,67 @@
+.plp {
+  display: flex;
+  // justify-content: flex-start;
+  width: 100%;
+  column-gap: 2.22vw;
+  padding: 0 4.44444vw;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    overflow-x: scroll;
+    column-gap: 19px;
+  }
+}
+.hero {
+  display: flex;
+  padding: 0 4.44444vw 0 0.4375vw;
+  margin-top: max(32px, 2.22222vw);
+  padding: 0 4.44vw;
+  column-gap: max(2.23vw, 33px);
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    margin-top: 0;
+    padding: 0 max(6.1333333vw,23px) 0 max(6.666666vw,25px);
+  }
+}
+.hero :nth-child(2){
+  background-color: #3563E9;
+}
+.hero > :nth-child(1) > :nth-child(2){
+  background-color: #54A6FF;
+}
+.hero > :nth-child(2) > :nth-child(3){
+  background-color: #54A6FF;
+}
+.form{
+  display: flex;
+  justify-content: space-between;
+  padding: max(2.22222222vw,32px) max(4.444444vw,64px);
+  @media screen and (min-width:240px) and (max-width:767px) {
+    justify-content: space-between;
+    align-items: center;
+    height: 89.6vw;
+    flex-direction: column;
+    padding: max(8.5333vw,32px) max(6.4vw,24px);
+    align-items: center;
+  }
+}
+.switch{
+  width: 10vw;
+  height: 10vw;
+  @media screen and (min-width:240px) and (max-width:767px) {
+    display: none;
+    position: absolute;
+    bottom: max(24px,6.4vw);
+    width: 128px;
+    height: 128px;
+  }
+}
+.rcdiv{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  column-gap: 2.22vw;
+  padding: 0 4.44444vw;
+  @media screen and (min-width:240px) and (max-width:767px) {
+  flex-direction: column;
+  row-gap: 19px;
+  padding: 0 6.4vw;
+  }
+}

@@ -1,0 +1,59 @@
+.product{
+    background: white;
+    // max-width: 21.11vw;
+    width: 21.11vw;
+    border-radius: 10px;
+    padding: 24px;
+    @media screen and (min-width:240px) and (max-width:766px) {
+        padding: 16px;
+        width: max(327px,87.2vw);
+        // max-width: 400px;
+        height: max(48vw,224px);
+    }
+    @media screen and (min-width:767px) and (max-width:1260px){
+        padding: 12px;
+    }
+}
+.gaadi{
+    max-width: 100%;
+    display: flex;
+    // margin-top: max(66px,4.58333333vh);
+    // margin-bottom: max(66px,4.58333333vh);
+    @media screen and (min-width:1850px) {
+        margin: 93.86px 0;
+    }
+    @media screen and (min-width:240px) and (max-width:767px) {
+        height: 26.66vw;
+        display: flex;
+        padding: 0 14px 0 0;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width:767px) and (max-width:1260px){
+        margin: 20px 0;
+    }
+    
+    margin: 66px 0;
+}
+.car{
+    width: 14.16vw;
+    min-width: 204px;
+    align-items: center;
+    margin: 0 auto;
+    @media screen and (min-width:240px) and (max-width:767px) {
+        width: max(142px,32.8666vw);
+        height: 15.066vw;
+        max-width: 300px;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1023px) {
+        min-width:100%;
+    }
+}
+.rec{
+    @media screen and (min-width:240px) and (max-width:767px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+}

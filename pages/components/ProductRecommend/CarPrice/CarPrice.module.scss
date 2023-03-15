@@ -1,0 +1,57 @@
+.priceWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 16px;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    padding-top: 0;
+  }
+}
+.money {
+  font-weight: 700;
+  font-size: clamp(16px, 24px, 1.388vw);
+  letter-spacing: -0.03em;
+  line-height: 125%;
+  color: #1a202c;
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 14px;
+  }
+}
+.perday {
+  font-weight: 700;
+  font-size: max(14px, 0.972vw);
+  color: #90a3bf;
+  line-height: 128%;
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+.button {
+  border: none;
+  width: 8.0555555555vw;
+  height: 3.055555555vw;
+  color: #ffffff;
+  background: #3563e9;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: max(16px, 1.111111111vw);
+
+  @media screen and (min-width: 240px) and (max-width: 767px) {
+    width: min(26.66666666vw, 100px);
+    height: min(9.6vw, 36px);
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1260px) {
+    font-size: 15.2px;
+  }
+}

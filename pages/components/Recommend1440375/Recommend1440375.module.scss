@@ -3,7 +3,8 @@
   justify-content: space-between;
   margin: 2em 1.5em 0 1.5em;
   @media screen and (min-width: 767px) {
-    margin: 2em 4em 0 4em;
+    margin: 2em 0 0 0;
+    padding-left: max(64px,4.44vw);
   }
 }
 .recomend {
@@ -13,8 +14,9 @@
   line-height: 150%;
   color: #90a3bf;
   @media screen and (min-width: 767px) {
-    font-size: 1em;
+    font-size: max(16px,1.1111111vw);
     font-weight: 600;
     line-height: 125%;
+    padding-left: max(1.388888vw,20px);
   }
 }
